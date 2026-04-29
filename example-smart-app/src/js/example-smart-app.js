@@ -16,8 +16,6 @@
                     query: {
                       code: {
                         $or: ['http://loinc.org|8302-2', //body height
-                              'http://loinc.org|8462-4', //bp
-                              'http://loinc.org|8480-6', // s bp
                               'http://loinc.org|2085-9', // cholestrol
                               'http://loinc.org|2089-1', // chol ldl mass
                               'http://loinc.org|85354-9'] // bp s and d
@@ -45,7 +43,7 @@
           var diastolicbp = getBloodPressureValue(byCodes('85354-9'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-
+          alert('you are here')
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
           p.gender = gender;

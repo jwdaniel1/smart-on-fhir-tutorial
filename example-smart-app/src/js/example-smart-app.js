@@ -63,6 +63,7 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
+          p.bodyTemp = getQuantityValueAndUnit(bodyTemp[0]);
 
           ret.resolve(p);
         });
@@ -87,6 +88,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      bodyTemp: {value: ''},
     };
   }
 
